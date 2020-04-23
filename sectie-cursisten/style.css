@@ -10,6 +10,31 @@
                 margin: 0 auto;
             }
             
+            button {
+                font-family: 'Noto Sans', sans-serif;
+                color: white;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 2%;
+                margin: 5% auto 10% auto;
+                background-color: rgb(19, 19, 19);
+                display: block;
+                border: 2px solid white;
+            }
+            
+            button:hover {
+                background-color: rgb(255, 255, 255, 0.2);
+            }
+            
+            button:focus {
+                outline: none;
+                cursor: pointer;
+            }
+            
+            #cursistenContainer {
+                display: none;
+            }
+            
             .card {
                 display: flex;
                 flex-direction: column;
