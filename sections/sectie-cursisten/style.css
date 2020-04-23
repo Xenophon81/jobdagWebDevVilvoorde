@@ -13,7 +13,7 @@ section {
 button {
     font-family: 'Noto Sans', sans-serif;
     color: white;
-    font-size: 1rem;
+    font-size: 2vw;
     font-weight: bold;
     padding: 2%;
     margin: 5% auto 10% auto;
@@ -66,25 +66,25 @@ button:focus {
     display: grid;
     gap: 1rem;
     /* Explicit grid */
-    grid-template-areas: 'a  b  c  d' 'e f g h' 'i j k l';
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 'a  b  c  d' 'e f g h' 'i j k l' 'm n o p' 'q r s t';
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     --stagger-delay: 100ms;
 }
 
 @media screen and (max-width:800px) {
     .animated-grid {
-        grid-template-areas: 'a  b  ''c  d' 'e f'' g h' 'i j ''k l';
-        grid-template-rows: repeat(6, 25%);
+        grid-template-areas: 'a  b ' 'c  d' 'e f' 'g h' 'i j' 'k l' 'm n' 'o p' 'q r';
+        grid-template-rows: repeat(9, 25%);
         grid-template-columns: 50% 50%;
     }
 }
 
 @media screen and (max-width:400px) {
     .animated-grid {
-        grid-template-areas: 'a '' b  ''c '' d' 'e ''f'' g'' h' 'i ''j ''k'' l';
-        grid-template-rows: repeat(12, 25%);
-        grid-template-columns: 100%;
+        grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' 'p' 'q' 'r';
+        grid-template-rows: repeat(18, 25%);
+        grid-template-columns: 1fr;
     }
 }
 
@@ -165,4 +165,34 @@ button:focus {
 .card:nth-child(12) {
     grid-area: l;
     animation-delay: calc(12 * var(--stagger-delay));
+}
+
+.card:nth-child(13) {
+    grid-area: m;
+    animation-delay: calc(13 * var(--stagger-delay));
+}
+
+.card:nth-child(14) {
+    grid-area: n;
+    animation-delay: calc(14 * var(--stagger-delay));
+}
+
+.card:nth-child(15) {
+    grid-area: o;
+    animation-delay: calc(15 * var(--stagger-delay));
+}
+
+.card:nth-child(16) {
+    grid-area: p;
+    animation-delay: calc(16 * var(--stagger-delay));
+}
+
+.card:nth-child(17) {
+    grid-area: q;
+    animation-delay: calc(17 * var(--stagger-delay));
+}
+
+.card:nth-child(18) {
+    grid-area: r;
+    animation-delay: calc(18 * var(--stagger-delay));
 }
