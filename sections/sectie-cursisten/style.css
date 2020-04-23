@@ -5,10 +5,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-section {
-    width: 70%;
-    margin: 0 auto;
-}
+section {}
 
 button {
     font-family: 'Noto Sans', sans-serif;
@@ -16,7 +13,7 @@ button {
     font-size: 2vw;
     font-weight: bold;
     padding: 2%;
-    margin: 5% auto 10% auto;
+    margin: 5% auto 5% auto;
     background-color: rgb(19, 19, 19);
     display: block;
     border: 2px solid white;
@@ -64,27 +61,28 @@ button:focus {
     width: 100%;
     margin-bottom: 200px;
     display: grid;
+    justify-content: center;
     gap: 1rem;
     /* Explicit grid */
     grid-template-areas: 'a  b  c  d' 'e f g h' 'i j k l' 'm n o p' 'q r s t';
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 15vw);
+    grid-template-columns: 15vw 15vw 15vw 15vw;
     --stagger-delay: 100ms;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1200px) {
     .animated-grid {
         grid-template-areas: 'a  b ' 'c  d' 'e f' 'g h' 'i j' 'k l' 'm n' 'o p' 'q r';
-        grid-template-rows: repeat(9, 25%);
-        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(9, 30vw);
+        grid-template-columns: 30vw 30vw;
     }
 }
 
 @media screen and (max-width:400px) {
     .animated-grid {
         grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' 'p' 'q' 'r';
-        grid-template-rows: repeat(18, 25%);
-        grid-template-columns: 1fr;
+        grid-template-rows: repeat(18, 60vw);
+        grid-template-columns: 60vw;
     }
 }
 
@@ -102,7 +100,6 @@ button:focus {
 }
 
 .card {
-    background-color: rgb(36, 243, 147);
     animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
 }
