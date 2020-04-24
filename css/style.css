@@ -12,6 +12,17 @@ body {
 }
 
 
+/* 
+.main-grid {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: ;
+    grid-template-columns: ;
+}
+ */
+
+
 /* Typography & elements*/
 
 h1,
@@ -146,6 +157,19 @@ fieldset.checkboxes {
 
 /* Sections */
 
+section {}
+
+.section-wrap {
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+section:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+
 header {
     background-color: #333;
     color: #e6e6e6;
@@ -160,10 +184,26 @@ nav {
     justify-content: space-around;
 }
 
-main,
 nav {
     margin: 0 auto;
     max-width: 60vw;
+}
+
+
+/*Section Matthias*/
+
+section {
+    height: 100vh;
+}
+
+.section-wrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+section:nth-child(even) {
+    background-color: grey;
 }
 
 footer {
