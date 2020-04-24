@@ -6,6 +6,3 @@ document.getElementById('cursBtn').onclick = function() {
         el.style.display = 'none';
     };
 };
-
-const images = document.querySelectorAll('img')
-images.forEach

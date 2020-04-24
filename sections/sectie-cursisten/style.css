@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: rgb(19, 19, 19);
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
 }
 
-section {}
-
 button {
     font-family: 'Noto Sans', sans-serif;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     padding: 2%;
     margin: 5% auto 5% auto;
@@ -33,12 +36,11 @@ button:focus {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #353535;
-    font-size: 3rem;
     color: #fff;
     height: 100%;
     width: 100%;
@@ -50,10 +52,86 @@ button:focus {
     background-repeat: no-repeat;
 }
 
-.card:hover {
-    z-index: 2;
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-    transform: translateY(-3px) scale(1.1);
+img {
+    height: auto;
+    width: 100%;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thecard {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+.front img {
+    height: 80%;
+}
+
+.front p {
+    padding: 2vw;
+    height: 20%;
+    background-color: grey;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    background: #f1f1f1;
+    transform: rotateY(180deg);
+}
+
+.back-content {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+
+.sm {
+    margin: 5% 0;
+}
+
+.sm a {
+    display: inline-flex;
+    width: 2vw;
+    height: 2vw;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+}
+
+.sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.thecard:hover>.front {
+    transform: rotateY(-180deg);
+}
+
+.thecard:hover>.back {
+    transform: rotateY(0deg);
 }
 
 .animated-grid {
@@ -62,11 +140,11 @@ button:focus {
     margin-bottom: 200px;
     display: grid;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5vw;
     /* Explicit grid */
     grid-template-areas: 'a  b  c  d' 'e f g h' 'i j k l' 'm n o p' 'q r s t';
-    grid-template-rows: repeat(5, 15vw);
-    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: repeat(5, 20vw);
+    grid-template-columns: 20vw 20vw 20vw 20vw;
     --stagger-delay: 100ms;
 }
 
