@@ -10,5 +10,7 @@ Gebruik bij elke dev sessie de meest recente versies van onze code aka: Pull elk
 
 Verander geen code van iemand anders zonder eerst met hem te overleggen om miscommunicaties te vermijden.
 
-...
+Werk in de branches van je team, Master branch is waar het wordt samengezet
 
+...
+https://arnodekoninck.github.io/jobdagWebDevVilvoorde/
