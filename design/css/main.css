@@ -153,7 +153,7 @@ section {
 .section-wrap {
     width: 70%;
     margin: 0 auto;
-    padding: 4%;
+    padding: 5%;
 }
 
 section:nth-child(even) {
@@ -174,7 +174,6 @@ nav {
     justify-content: space-around;
 }
 
-main,
 nav {
     margin: 0 auto;
     max-width: 60vw;
