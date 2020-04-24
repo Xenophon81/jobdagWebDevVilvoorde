@@ -190,7 +190,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: grey;
+    background-color: rgb(175, 175, 175);
 }
 
 footer {
