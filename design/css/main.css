@@ -146,6 +146,20 @@ fieldset.checkboxes {
 
 /* Sections */
 
+section {
+    height: 100vh;
+}
+
+.section-wrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+section:nth-child(even) {
+    background-color: rgb(187, 187, 187);
+}
+
 header {
     background-color: #333;
     color: #e6e6e6;
@@ -171,18 +185,4 @@ footer {
     font-size: 0.8em;
     color: #e6e6e6;
     background-color: #d8535f;
-}
-
-section {
-    height: 100vh;
-}
-
-.section-wrap {
-    width: 70%;
-    margin: 0 auto;
-    padding: 4%;
-}
-
-section:nth-child(even) {
-    background-color: rgb(187, 187, 187);
 }
