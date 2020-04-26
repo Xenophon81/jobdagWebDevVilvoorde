@@ -106,8 +106,13 @@ ul li::before {
 }
 
 a {
+<<<<<<< HEAD
   text-decoration: none;
   color: var(--bg-color);
+=======
+    text-decoration: none;
+    color: var(--accent-color);
+>>>>>>> 9d96cde6b1b17e3a6d151bce2b5f852d8b51e429
 }
 
 nav a {
@@ -625,5 +630,9 @@ footer {
 /*Section Matthias*/
 
 section {
+<<<<<<< HEAD
   height: 100vh;
+=======
+    height: 100vh;
+>>>>>>> 9d96cde6b1b17e3a6d151bce2b5f852d8b51e429
 }
