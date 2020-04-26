@@ -194,7 +194,7 @@ button:focus {
 
 .animated-grid img {
   height: auto;
-  width: 100%;
+  width: auto;
 }
 
 .middle {
@@ -223,7 +223,8 @@ button:focus {
 }
 
 .front img {
-  height: 100%;
+  height: auto;
+  width: 100%;
   display: block;
   grid-row: 1 / span 8;
 }
