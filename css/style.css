@@ -244,15 +244,19 @@ nav {
 }
 
 
-/* Footer Danny */
+/* Footer - Danny */
 
 footer {
-    background: var(--heading-color);
+    background-color: var(--accent-color);
     text-align: left;
     padding: 40px;
     display: grid;
     gap: 2em;
     grid-template-columns: 1fr 1fr;
+}
+
+.footer-left h6 {
+    color: var(--bg-color);
 }
 
 .footer-left p,
@@ -269,7 +273,7 @@ footer {
 }
 
 .footer-right img {
-    max-height: 40px;
+    max-height: 30px;
 }
 
 .partners {
